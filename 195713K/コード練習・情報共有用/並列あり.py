@@ -13,7 +13,6 @@ if __name__ == '__main__':
                              password='2-xvZifV',
                              db='pararell',
                              charset='utf8',
-                             # 結果の受け取り方の指定。Dict形式で結果を受け取ることができる
                              cursorclass=pymysql.cursors.DictCursor) 
                     
     start = time.time()
