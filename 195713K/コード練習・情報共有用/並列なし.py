@@ -48,3 +48,15 @@ if __name__ == '__main__':
     elapsed_time = time.time() - start
     print("並列あり:{0}".format(elapsed_time) + "[sec]")
     # 並列あり:406.8516218662262[sec]
+
+
+"""
+mysql> SHOW FULL COLUMNS FROM prac1;
++-------+-------------+-----------------+------+-----+---------+-------+---------------------------------+---------+
+| Field | Type        | Collation       | Null | Key | Default | Extra | Privileges                      | Comment |
++-------+-------------+-----------------+------+-----+---------+-------+---------------------------------+---------+
+| id    | int(11)     | NULL            | YES  |     | NULL    |       | select,insert,update,references |         |
+| name  | varchar(10) | utf8_general_ci | YES  |     | NULL    |       | select,insert,update,references |         |
+| power | int(11)     | NULL            | YES  |     | NULL    |       | select,insert,update,references |         |
++-------+-------------+-----------------+------+-----+---------+-------+---------------------------------+---------+
+"""
